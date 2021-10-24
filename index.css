@@ -1,0 +1,44 @@
+
+body{
+    background-image: url(../blackjack/imagenes/istockphoto-182457915-1024x1024.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Permanent Marker', cursive;;
+    font-weight: 400;
+    text-align: center;
+}
+    
+
+
+
+
+p{
+    font-size: 75px;
+    color: white;
+}
+
+
+h1{
+color: goldenrod;
+font-size: 100px;
+
+}
+
+
+#start{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    font-size: 30px;
+    margin: auto;
+    padding: 0%;
+}
+
+#sum{
+    color: black;
+    margin-bottom: 20px;
+}
+
