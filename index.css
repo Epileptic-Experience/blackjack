@@ -6,6 +6,7 @@ body{
     font-family: 'Permanent Marker', cursive;;
     font-weight: 400;
     text-align: center;
+    margin: 0%;
 }
     
 
@@ -15,13 +16,16 @@ body{
 p{
     font-size: 75px;
     color: white;
+    position: relative;
+    
 }
 
 
 h1{
 color: goldenrod;
 font-size: 100px;
-
+position: relative;
+margin: auto;
 }
 
 
@@ -35,10 +39,12 @@ font-size: 100px;
     font-size: 30px;
     margin: auto;
     padding: 0%;
+    position: relative;
 }
 
 #sum{
     color: black;
     margin-bottom: 20px;
+    
 }
 
