@@ -1,8 +1,8 @@
-let firstcard = 11
+let firstcard = 10
 
-let seconcard = 10
+let secondcard = 4
 
-let sum = firstcard + seconcard
+let sum = firstcard + secondcard
 
 let hasBlackjack = false
 
@@ -10,14 +10,17 @@ let isAlive = true
 
 let messageEl = document.getElementById("message-el")
 
+let sumEl = document.getElementById("sum")
+
+let cardsEl = document.getElementById("cards-el")
 
 
 
-console.log(sum)
+
 
 let message = ""
 
-function startGame() {
+function renderGame() {
 
 
     if (sum <= 20) {
@@ -29,10 +32,34 @@ function startGame() {
         hasBlackjack = true
     }
     else {
-        message = "you're out kid"
+        message = "ha! get outta here kid"
         isAlive = false
     }
 
     messageEl.textContent = message
 
+    sumEl.textContent = "sum: " + sum
+
+    cardsEl.textContent += firstcard + " " + secondcard
+
+
+}
+
+console.log(sum)
+
+function newCard() {
+    let card = 8
+
+    sum += card
+
+    renderGame()
+
+    console.log(sum)
+
+    cardsEl.textContent = "cards: " + firstcard + " " + secondcard + " " + card
+}
+
+
+function startGame() {
+    renderGame()
 }
