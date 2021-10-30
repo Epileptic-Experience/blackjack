@@ -10,16 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+ 
 </head>
 
 <body>
+    
     <h1>Blackjack</h1>
     <i>
         <p id="message-el"> wanna play, kid? </p>
         <p id="cards-el">cards: </p>
         <p id="sum">sum: </p>
-        <button onclick="startGame()">lets do it</button>
-        <button onclick="newCard()">hit me</button>
+        <button onclick="startGame()" id="start" >lets do it</button>
+        <button onclick="newCard()" id="newcard" >hit me</button>
     </i>
 
     <div class="credito">
@@ -30,6 +32,9 @@
     </div>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 <script src="index.js"></script>
 
 </html>
