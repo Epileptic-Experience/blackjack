@@ -49,11 +49,7 @@ function renderGame() {
     }
     messageEl.textContent = message
 }
-function getNewCard() {
-    if (isAlive === true && hasBlackjack === false) {
-        newCard
-    }
-}
+
 
 function newCard() {
     if (isAlive === true && hasBlackjack === false) {
