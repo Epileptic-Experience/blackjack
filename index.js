@@ -11,10 +11,9 @@ let player = {
     name: "J",
     chips: 1245
 }
-let playerEl = document.getElementById ("player-el")
-playerEl.textContent = player.name + ": $ " + player.chips
 
-
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
     let cardnumber = Math.floor(Math.random() * 13) + 1
@@ -43,12 +42,10 @@ function renderGame() {
     if (sum <= 20) {
         message = "want a new card kid?"
 
-    }
-    else if (sum === 21) {
+    } else if (sum === 21) {
         message = "you got lucky "
         hasBlackjack = true
-    }
-    else {
+    } else {
         message = "ha! get outta here kid"
         isAlive = false
     }
